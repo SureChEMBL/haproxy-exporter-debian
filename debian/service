@@ -1,0 +1,12 @@
+[Unit]
+Description=Prometheus exporter for HAProxy
+Documentation=https://github.com/prometheus/haproxy_exporter
+
+[Service]
+Restart=always
+User=prometheus
+EnvironmentFile=/etc/default/prometheus-haproxy-exporter
+ExecStart=/usr/bin/prometheus-haproxy-exporter $ARGS
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+prometheus-haproxy-exporter (0.8.0-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Yury Zavarin <yzavarin@ebi.ac.uk>  Wed, 04 Oct 2017 10:45:50 +0100

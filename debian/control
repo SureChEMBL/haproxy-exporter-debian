@@ -1,0 +1,27 @@
+Source: prometheus-haproxy-exporter
+Section: net
+Priority: extra
+Maintainer: Yury Zavarin <yzavarin@ebi.ac.uk>
+Build-Depends:
+ debhelper (>= 9.0.0),
+ dh-golang (>= 0.17~),
+ golang-any,
+ golang-github-prometheus-client-golang-dev,
+ golang-github-prometheus-client-model-dev,
+ golang-github-prometheus-common-dev,
+ golang-gopkg-alecthomas-kingpin.v2-dev,
+Standards-Version: 3.9.8
+Vcs-Git: https://github.com/SureChEMBL/haproxy-exporter-debian.git
+Vcs-Browser: https://github.com/SureChEMBL/haproxy-exporter-debian
+Homepage: https://github.com/prometheus/haproxy_exporter
+Testsuite: autopkgtest
+
+Package: prometheus-haproxy-exporter
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ daemon,
+Built-Using: ${misc:Built-Using}
+Description: Prometheus exporter for HAProxy metrics
+ Prometheus exporter for HAProxy metrics, written in Go.
