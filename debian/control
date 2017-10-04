@@ -8,7 +8,7 @@ Build-Depends:
  golang-any,
  golang-github-prometheus-client-golang-dev,
  golang-github-prometheus-client-model-dev,
- golang-github-prometheus-common-dev,
+ golang-github-prometheus-common-dev (>= 0+git20170731),
  golang-gopkg-alecthomas-kingpin.v2-dev,
 Standards-Version: 3.9.8
 Vcs-Git: https://github.com/SureChEMBL/haproxy-exporter-debian.git
