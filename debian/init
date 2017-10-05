@@ -35,11 +35,6 @@ do_start_prepare()
     mkdir -p `dirname $PIDFILE` || true
     chown -R $USER: `dirname $LOGFILE` || return 1
     chown -R $USER: `dirname $PIDFILE` || return 1
-    if test -z "$DATA_SOURCE_NAME"; then
-        log_failure_msg 'missing $DATA_SOURCE_NAME'
-        exit
-    fi
-    export DATA_SOURCE_NAME
 }
 
 do_start_cmd()
