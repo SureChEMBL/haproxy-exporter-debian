@@ -1,3 +1,10 @@
+prometheus-haproxy-exporter (0.8.0-2) unstable; urgency=medium
+
+  * Removed check for existence of DATA_SOURCE_NAME env variable from
+    init script. 
+
+ -- Yury Zavarin <yzavarin@ebi.ac.uk>  Thu, 05 Oct 2017 10:20:23 +0100
+
 prometheus-haproxy-exporter (0.8.0-1) unstable; urgency=medium
 
   * Initial release.
