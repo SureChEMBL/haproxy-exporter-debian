@@ -5,8 +5,6 @@ export DH_GOPKG := github.com/prometheus/haproxy_exporter
 
 BUILDDIR := build
 
-#DEBVERS    ?= $(shell dpkg-parsechangelog | sed -n -e 's/^Version: //p')
-#VERSION    ?= $(shell echo '$(DEBVERS)' | sed 's/^[[:digit:]]*://; s/[-].*//')
 DEBPKGNAME ?= $(shell dpkg-parsechangelog | sed -n -e 's/^Source: //p')
 
 %:
